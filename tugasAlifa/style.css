@@ -1,0 +1,25 @@
+.text-header{
+    text-align: center;
+    color: #eb9575;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-h3{
+    text-align: center;
+    color: #7a4a38;
+}
+.table{
+    text-align: center;
+    border-collapse: collapse;
+    font-family: 'Times New Roman';
+    color: #eb9575;
+    border: 2px;
+}
+.tr-1 {
+    background-color: pink;
+    font-family: 'Courier New', Courier, monospace;
+}
+.table, th, td {
+    border: 5px solid #eba2bb;
+    padding: 8px 30px;
+    text-align: center;
+}

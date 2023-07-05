@@ -1,0 +1,24 @@
+.text-header{
+    text-align: center;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text-h3{
+    text-align: center;
+    color: burlywood;
+}
+
+.table{
+    text-align: center;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+    color: crimson;
+    border: 1px;
+}
+.table, th, td{
+    border: 1px solid #a83262;
+    padding: 8px 40px;
+}
+.tr1 {
+    background-color: coral;
+}
