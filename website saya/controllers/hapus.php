@@ -1,11 +1,11 @@
 <?php
-require "controllers/function.php";
+require "function.php";
 $id_buku = $_GET["id"];
 if (buku_satu_jumlah($id_buku) < 1) {
     echo "
     <script>
     alert('ID Buku tidak tersedia!');
-    location='buku.php';
+    location='../buku.php';
     </script>
     ";
 }else {
@@ -13,12 +13,12 @@ if (buku_satu_jumlah($id_buku) < 1) {
     if ($hapus) {
         echo "<script>
         alert('Buku berhasil dihapus!');
-        location='buku.php';
+        location='../buku.php';
         </script>";
     } else {
         echo "<script>
         alert('Buku gagal dihapus!');
-        location='buku.php';
+        location='../buku.php';
         </script>";
     }
 }

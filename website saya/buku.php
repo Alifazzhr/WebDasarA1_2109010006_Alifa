@@ -49,7 +49,7 @@ require "controllers/function.php";
                 <td><?= date("d F Y, H:i", strtotime ($b["edit"]));?></td>
                 <td>
                     <a href="edit.php?id=<?= $b["id"]; ?>">Edit</a>
-                    <a href="hapus.php?id=<?= $b["id"] ?>">Hapus</a>
+                    <a href="controllers/hapus.php?id=<?= $b["id"] ?>">Hapus</a>
                 </td>
             </tr>
         <?php endforeach;
