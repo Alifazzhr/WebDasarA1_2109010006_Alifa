@@ -16,6 +16,9 @@
         <a href="pinjam.php">
             <li>Peminjaman Buku</li>
         </a>
+        <a href="login.php">
+            <li>Login dlu kalee</li>
+        </a>
     </ul>
 </body>
 </html>
