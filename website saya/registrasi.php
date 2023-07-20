@@ -17,21 +17,21 @@ require "controllers/function.php";
                 <th>Username</th>
                 <td>:</td>
                 <td>
-                    <input type="text" placeholder="Input Username" name="username" value="<?= $_POST["username"] ?>">
+                    <input type="text" placeholder="Input Username" name="username" value="<?= @$_POST["username"] ?>">
                 </td>
             </tr>
             <tr>
                 <th>Email</th>
                 <td>:</td>
                 <td>
-                    <input type="email" placeholder="Input Email" name="email" value="<?= $_POST["email"] ?>">
+                    <input type="email" placeholder="Input Email" name="email" value="<?= @$_POST["email"] ?>">
                 </td>
             </tr>
             <tr>
                 <th>Password</th>
                 <td>:</td>
                 <td>
-                    <input type="password" name="pw1" value="<?= $_POST["pw1"] ?>">
+                    <input type="password" name="pw1" value="<?= @$_POST["pw1"] ?>">
                 </td>
             </tr>
             <tr>
@@ -71,6 +71,11 @@ require "controllers/function.php";
             //untuk mengubah password menjadi enkripsi
            $encrypt_pw = password_hash($pw1, PASSWORD_DEFAULT);
            $tgl_hari_ini = date("Y-m-d H:i:s");
+           if (user_satu_jumlah($username)>0) {
+            echo "<script>
+            alert('Username sudah ada sebelumnya!')
+            </script>";
+           } else {
            $registrasi = q("INSERT INTO user VALUES(null,
            '$username',
            '$email',
@@ -81,11 +86,8 @@ require "controllers/function.php";
             alert('Registrasi anda berhasil, Silahkan login')
             location='login.php'
             </script>";
-           }else {
-            echo "<script>
-            alert('Username sudah ada sebelumnya!')
-            </script>";
            }
+            }
         }
     }
     

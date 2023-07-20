@@ -10,14 +10,14 @@
     <h1>Selamat Datang di Website Saya</h1>
     <hr>
     <ul>
+        <a href="login.php">
+            <li>Login dlu kalee</li>
+        </a>
         <a href="buku.php">
             <li>Data Buku</li>
         </a>
         <a href="pinjam.php">
             <li>Peminjaman Buku</li>
-        </a>
-        <a href="login.php">
-            <li>Login dlu kalee</li>
         </a>
     </ul>
 </body>
